@@ -13,9 +13,15 @@ a {
   color: white;
   text-decoration: underline;
   font-family: SegoeUI;
-  float: right;
-  position: relative;
-  top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+  top: 70vh;
+  right: 90vh;
+  font-size: 60px;
+  left: 15px;
 }
 
 a:hover {
@@ -69,6 +75,7 @@ p.HomepageTitle {
   width: 100px;
   height: 45px;
   border: none;
+  margin-right: 20px;
   border-radius: 4px;
   box-shadow: inset 0 0 0 0 white;
   background-color: purple;
@@ -82,6 +89,28 @@ p.HomepageTitle {
 }
 
 .AboutUs:focus {
+  box-shadow: inset 0 0 0 0 white;
+  color: white;
+}
+
+.ContactUs {
+  font-family: SegoeUI;
+  width: 100px;
+  height: 45px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 0 white;
+  background-color: purple;
+  transition: ease-out 0.3s;
+  outline: none;
+  color: white;
+}
+.ContactUs:hover {
+  box-shadow: inset 100px 0 0 0 white;
+  color: purple;
+}
+
+.ContactUs:focus {
   box-shadow: inset 0 0 0 0 white;
   color: white;
 }
